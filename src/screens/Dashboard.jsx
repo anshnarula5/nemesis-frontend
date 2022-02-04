@@ -38,7 +38,6 @@ const Dashboard = () => {
   };
   const handleSubmit = () => {
     dispatch(addUser(formData));
-    dispatch(setAlert("User added successfully!", "success"));
     setFormData({ email: "", username:"", mobile: "", address: "" });
   };
   useEffect(() => {
@@ -46,7 +45,6 @@ const Dashboard = () => {
   }, [success, deleteSuccess, dispatch]);
   const handleDelete = (id) => {
     dispatch(deleteUser(id))
-    dispatch(setAlert("User deleted", "success"));
   }
   return (
     <Container>
