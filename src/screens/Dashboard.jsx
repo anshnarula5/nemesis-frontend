@@ -11,7 +11,6 @@ import {
 } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
-import { setAlert } from "../redux/actions/alertAction";
 import { addUser, deleteUser, getAllUsers } from "../redux/actions/userActions";
 
 const Dashboard = () => {
