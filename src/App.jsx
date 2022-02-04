@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Auth from "./screens/Auth";
 import Dashboard from "./screens/Dashboard";
-import { Container, Row } from "react-bootstrap";
+import {  Row } from "react-bootstrap";
 import Header from "./components/Header";
 import Popup from "./components/Popup";
 

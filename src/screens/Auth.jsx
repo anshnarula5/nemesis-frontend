@@ -32,7 +32,7 @@ const Auth = () => {
       navigate("/dashboard");
       dispatch(setAlert(`Welcome ${adminInfo.name} !`, "success"));
     }
-  }, [adminInfo]);
+  }, [adminInfo, navigate, dispatch]);
   return (
     <Container>
       <Row className="justify-content-md-center h-100 ">

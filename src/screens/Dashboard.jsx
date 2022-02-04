@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 import {
   Button,
-  Card,
   Col,
   Container,
   Form,
-  Nav,
   Row,
   Tab,
   Table,
@@ -27,7 +25,7 @@ const Dashboard = () => {
     if (!adminInfo) {
       navigate("/");
     }
-  }, [adminInfo]);
+  }, [adminInfo, navigate]);
   const [formData, setFormData] = useState({
     email: "",
     username: "",
@@ -45,7 +43,7 @@ const Dashboard = () => {
   };
   useEffect(() => {
     dispatch(getAllUsers());
-  }, [success, deleteSuccess]);
+  }, [success, deleteSuccess, dispatch]);
   const handleDelete = (id) => {
     dispatch(deleteUser(id))
     dispatch(setAlert("User deleted", "success"));
